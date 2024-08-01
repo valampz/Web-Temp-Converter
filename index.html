@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convert Temp</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Temp Conversion</title>
 </head>
 <body>
-    <form>
-        <h1>Temperature Converter</h1>
 
-        <label for="inputNum">Enter the Temperature:</label><br>
-        <input type="number" id="inputNum">
+    <form>
+        <h1>Temperature Conversion:</h1>
+        <input type="number" id="textBox" value="0">
         <br>
-        <input type="radio" id="toFahrenheit" name="tempType">
+
+        <input type="radio" id="toFahrenheit" name="unit">
         <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label>
         <br>
-        <input type="radio" id="toCelsius" name="tempType">
+        <input type="radio" id="toCelsius" name="unit">
         <label for="toCelsius">Fahrenheit ➡️ Celsius</label>
+        <br>
 
-        <p id="result">100deg C</p>
+        <button type="button" onclick="convert()">CONVERT</button>
+        <p id="result"></Select></p>
     </form>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
